@@ -1,0 +1,94 @@
+/* style.css */
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+/* Common styles for both phone and desktop */
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #e0f7fa; /* Light blue background */
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: #81d4fa; /* Light blue header background */
+}
+
+h1, h2 {
+    margin: 0;
+}
+
+/* Navigation styles */
+nav {
+    background-color: #0277bd; /* Dark blue navigation background */
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+/* Section styles */
+section {
+    margin-bottom: 20px;
+}
+
+/* Button styles */
+button {
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    background-color: #38aaec; /* Dark blue button background */
+    color: #fff;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0955ac; /* Darker blue on hover */
+}
+
+/* Media queries for phone */
+@media (max-width: 600px) {
+    nav a {
+        display: block;
+        margin: 10px 0;
+    }
+
+    header, main {
+        padding: 10px;
+    }
+
+    button {
+        width: 100%;
+    }
+}
+
+/* Media queries for desktop */
+@media (min-width: 601px) {
+    nav {
+        display: flex;
+        justify-content: center;
+    }
+
+    header, main {
+        padding: 20px;
+    }
+
+    button {
+        width: auto;
+    }
+}
